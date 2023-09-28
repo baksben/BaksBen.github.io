@@ -19,7 +19,7 @@ This was a website built to showcase my technical skills, experience and project
 
 
 ![Imgur](https://ctrlv.link/oAsS)
-![Imgur](https://ctrlv.link/wSBf)
+![Imgur](images/contact.jpg)
 
 ## Credits
 Dimension by HTML5 UP
