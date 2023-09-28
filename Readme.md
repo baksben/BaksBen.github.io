@@ -18,7 +18,7 @@ This was a website built to showcase my technical skills, experience and project
 ## Homepage visuals
 
 
-![Imgur](https://ctrlv.link/oAsS)
+![Imgur](images/front_page.jpg)
 ![Imgur](images/contact.jpg)
 
 ## Credits
