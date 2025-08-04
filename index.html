@@ -59,7 +59,69 @@
 
 
 						<!-- Work -->
+							<article id="work">
+								<h2 class="major">CUSTOMER BEHAVIOR MODELING</h2>
+								<span class="image main"><img src="images/Spanish_Name_Genderizer_Blog_Post_Image_990x380_v2.png" alt="Best python name genderizer" /></span>
+								<p><b>Customer Analytics / Churn and Retention Analysis</b></p>
+								<p>This project utilizes free customer data from Kaggle to explore, predict, and visualize customer behavior.</p>
 
+								<p>The main goal is to understand churn patterns, segment customers using behavioral metrics, and communicate insights through interactive Power BI dashboards, along with my thought process behind every decision and model used.</p>
+
+								<p>Our data from Kaggle was relatively clean, requiring minimal preprocessing.</p>
+
+								<p>Males represent approximately <strong>46.64%</strong> of the dataset, with <strong>38.58%</strong> of them churning. In comparison, <strong>18,911 out of 34,353</strong> females churned.</p>
+
+								<p>I engineered new features to enhance the analysis:</p>
+								<ul>
+								<li><strong>Engagement Ratio</strong>: Usage frequency divided by tenure.</li>
+								<li><strong>Age Groups</strong>: Customers grouped by age ranges.</li>
+								<li><strong>New_Customers</strong>: Customers with less than 6 years of tenure.</li>
+								<li><strong>Frequent_Caller</strong>: Based on the assumption that frequent support calls may be related to churn.</li>
+								<li><strong>Payment_Issue</strong>: Derived from the "Payment Delay" variable, assuming customers with delays may be at risk due to financial constraints or contract neglect.</li>
+								</ul>
+
+								<p>For encoding:</p>
+								<ul>
+								<li><strong>OrdinalEncoder</strong> was used for categorical variables with an inherent order.</li>
+								<li><strong>LabelEncoder</strong> was used for nominal variables such as gender.</li>
+								</ul>
+
+								<p>The dataset was balanced and did not require SMOTE or other resampling techniques.</p>
+
+								<p>A major goal was to evaluate various classification models for churn prediction. The best model was:</p>
+								<ul>
+								<li><strong>Random Forest Classifier</strong> with an accuracy of <strong>0.99844</strong> and an F1 score of <strong>1.0</strong>.</li>
+								<li>This slightly outperformed Gradient Boosting by <strong>0.001</strong>.</li>
+								<li>KNN, SVM, and Logistic Regression also performed reasonably well.</li>
+								</ul>
+
+								<p><strong>Customer Segmentation:</strong></p>
+
+								<p>We applied RFM (Recency, Frequency, Monetary) analysis and K-Means clustering for customer segmentation. Key insights include:</p>
+								<ul>
+								<li>Customers with higher recency scores tend to spend more, though the pattern is not strictly linear.</li>
+								<li>Customers with moderate to high frequency also tend to be higher spenders, though not always.</li>
+								</ul>
+
+								<p>The clustering produced four distinct segments:</p>
+								<ul>
+								<li><strong>Loyal Moderate Spenders</strong></li>
+								<li><strong>At-Risk Low Spenders</strong></li>
+								<li><strong>High-Value Dormant</strong></li>
+								<li><strong>New/Recent Customers</strong></li>
+								</ul>
+
+								<p>(Insert segmentation summary table here)</p>
+
+								<p>We asked: <em>Do churn rates align with these segments?</em> After analysis, we found that the segmentation holds well overall. However, Cluster 2 would be better labeled as <strong>High-Value Steady Customers</strong> to reflect their consistent behavior and value.</p>
+
+								<p><strong>Recommended Strategies by Segment:</strong></p>
+								<p>(Insert business strategy table here)</p>
+
+								<ul class="actions special">
+									<li><a href="https://pypi.org/project/spanish-name-genderizer/#description" class="button large">View Package</a></li>
+								</ul>
+							</article>
 							<article id="work">
 								<h2 class="major">NLP</h2>
 								<span class="image main"><img src="images/Spanish_Name_Genderizer_Blog_Post_Image_990x380_v2.png" alt="Best python name genderizer" /></span>
